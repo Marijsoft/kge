@@ -14,16 +14,14 @@ void vainfiga(string&);
 void vainfiga(string& testo) {
 	transform(begin(testo), end(testo), begin(testo), [](char c)->char {
 		if (not isalpha(c))
-			return c;
-
-		char const pivot = isupper(c) ? 'A' : 'a';
+			return c; char const pivot = isupper(c) ? 'A' : 'a';
 		return (c - pivot + 13) % 26 + pivot;});
 }
 
 int _tmain(int argc, _TCHAR* argv[]) {
 
 	string email;
-	cout << "Keygen per Excel2MySQL"<< endl;
+	cout << "Keygen per Excel2MySQL" << endl;
 	cout << "Email: ";
 	cin >> email;
 
@@ -48,7 +46,5 @@ int _tmain(int argc, _TCHAR* argv[]) {
 	replace(licenza.begin(), licenza.end(), 'Z', 'X');
 	cout << "Licenza : " << licenza.substr(0, 15) << endl;
 	system("pause");
-    	return 0;
+	return 0;
 }
-
-
