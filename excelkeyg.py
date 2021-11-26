@@ -24,7 +24,7 @@ def generalicenza(email):
     print("\nLicenza: " + licenza[0:15])
 
 def main():
-
+    print("n\Excel2MySql keygen") 
     email = input("Inserisci il tuo indirizzo email:")
     generalicenza (email)
  #   input() #per generare un altro seriale
