@@ -11,19 +11,19 @@ using namespace std;
 
 void vainfiga(string&);
 
-void vainfiga(string& text) {
-	transform(begin(text), end(text), begin(text), [](char c)->char {
+void vainfiga(string& testo) {
+	transform(begin(testo), end(testo), begin(testo), [](char c)->char {
 		if (not isalpha(c))
 			return c;
 
-		char const pivot = std::isupper(c) ? 'A' : 'a';
+		char const pivot = isupper(c) ? 'A' : 'a';
 		return (c - pivot + 13) % 26 + pivot;});
 }
 
 int _tmain(int argc, _TCHAR* argv[]) {
 
 	string email;
-	cout << "Keygen per Excel2MySQL"<< std::endl;
+	cout << "Keygen per Excel2MySQL"<< endl;
 	cout << "Email: ";
 	cin >> email;
 
